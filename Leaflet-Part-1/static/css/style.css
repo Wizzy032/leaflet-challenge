@@ -1,10 +1,87 @@
-body {
+/* Main container styles - Ensures map takes full viewport */
+html, body, #map {
+  width: 100%;
+  height: 100%;
   padding: 0;
   margin: 0;
 }
 
-#map,
-body,
-html {
-  height: 100%;
+/* Legend styling - Creates a clean, readable legend box */
+.legend {
+  padding: 10px;
+  line-height: 18px;
+  color: #555;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Legend color squares styling */
+.legend i {
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+/* Legend hover effect for better interactivity */
+.legend:hover {
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* Control container positioning */
+.leaflet-bottom.leaflet-left {
+  width: 90%;
+}
+
+/* Layer control styling - Makes the layer control more visible */
+.leaflet-control-layers {
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Custom popup styling */
+.leaflet-popup-content {
+  margin: 13px;
+  line-height: 1.4;
+}
+
+/* Popup header styling */
+.leaflet-popup-content h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+/* Popup content styling */
+.leaflet-popup-content p {
+  margin: 5px 0;
+}
+
+/* Timeline controls styling (if implemented) */
+.leaflet-control-container .leaflet-timeline-controls {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+/* Enhanced legend title styling */
+.legend h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Layer control enhanced styling */
+.leaflet-control-layers-list {
+  margin-bottom: 0;
+}
+
+.leaflet-control-layers-base label,
+.leaflet-control-layers-overlays label {
+  margin-bottom: 5px;
 }
